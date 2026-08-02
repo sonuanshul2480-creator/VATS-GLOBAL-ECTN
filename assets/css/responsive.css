@@ -1,0 +1,702 @@
+/*==========================================================
+VATS GLOBAL LOGISTICS
+Responsive Stylesheet
+Version : 2.0
+==========================================================*/
+
+
+/*==========================================================
+1400px
+==========================================================*/
+
+@media (max-width:1400px){
+
+.container{
+
+max-width:1200px;
+
+}
+
+.hero-section h1{
+
+font-size:58px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+}
+
+.finder-box{
+
+padding:55px;
+
+}
+
+}
+
+
+/*==========================================================
+1200px
+==========================================================*/
+
+@media (max-width:1200px){
+
+.hero-section{
+
+padding-top:120px;
+
+padding-bottom:90px;
+
+}
+
+.hero-section h1{
+
+font-size:52px;
+
+}
+
+.hero-section h2{
+
+font-size:24px;
+
+}
+
+.hero-graphic{
+
+margin-top:40px;
+
+}
+
+.section-title h2{
+
+font-size:38px;
+
+}
+
+.finder-box{
+
+padding:45px;
+
+}
+
+.cta-box{
+
+padding:60px 40px;
+
+}
+
+.footer{
+
+padding-top:80px;
+
+}
+
+}
+
+
+/*==========================================================
+992px
+==========================================================*/
+
+@media (max-width:992px){
+
+.top-bar{
+
+display:none;
+
+}
+
+.custom-navbar{
+
+padding:15px 0;
+
+}
+
+.navbar-toggler{
+
+border:none;
+
+box-shadow:none !important;
+
+}
+
+.navbar-collapse{
+
+margin-top:18px;
+
+background:#111827;
+
+padding:20px;
+
+border-radius:18px;
+
+}
+
+.navbar-nav{
+
+text-align:center;
+
+}
+
+.navbar-nav .nav-link{
+
+margin:12px 0;
+
+}
+
+.hero-section{
+
+text-align:center;
+
+padding-top:100px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-features{
+
+grid-template-columns:1fr;
+
+margin-top:35px;
+
+}
+
+.hero-graphic{
+
+margin-top:60px;
+
+}
+
+.hero-graphic img{
+
+max-width:420px;
+
+margin:auto;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.finder-box{
+
+text-align:center;
+
+padding:40px 30px;
+
+}
+
+.finder-box h2{
+
+font-size:34px;
+
+}
+
+.step-box{
+
+margin-bottom:20px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-links{
+
+margin-bottom:30px;
+
+}
+
+}
+/*==========================================================
+768px - TABLETS & LARGE MOBILES
+==========================================================*/
+
+@media (max-width:768px){
+
+section{
+
+padding:70px 0;
+
+}
+
+.hero-section{
+
+min-height:auto;
+
+padding-top:80px;
+
+padding-bottom:70px;
+
+}
+
+.hero-section h1{
+
+font-size:40px;
+
+line-height:1.2;
+
+}
+
+.hero-section h2{
+
+font-size:22px;
+
+}
+
+.hero-section p{
+
+font-size:16px;
+
+margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+}
+
+.hero-features{
+
+gap:15px;
+
+margin-top:30px;
+
+}
+
+.hero-features div{
+
+justify-content:center;
+
+}
+
+.hero-graphic{
+
+margin-top:50px;
+
+}
+
+.hero-graphic img{
+
+max-width:320px;
+
+}
+
+.section-title span{
+
+font-size:13px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.section-title p{
+
+font-size:15px;
+
+}
+
+.service-card,
+
+.feature-card,
+
+.country-card,
+
+.step-box,
+
+.testimonial-card,
+
+.document-list{
+
+padding:30px 22px;
+
+}
+
+.service-card i,
+
+.feature-card i{
+
+width:65px;
+
+height:65px;
+
+font-size:26px;
+
+}
+
+.step-box i{
+
+width:70px;
+
+height:70px;
+
+font-size:28px;
+
+}
+
+.finder-box{
+
+padding:30px 25px;
+
+}
+
+.finder-box h2{
+
+font-size:28px;
+
+}
+
+.finder-box p{
+
+font-size:15px;
+
+}
+
+.finder-box .form-select,
+
+.finder-box .btn{
+
+height:54px;
+
+}
+
+.cta-box{
+
+padding:45px 25px;
+
+}
+
+.cta-box h2{
+
+font-size:32px;
+
+}
+
+.cta-box p{
+
+font-size:16px;
+
+}
+
+.footer{
+
+padding:70px 0 25px;
+
+}
+
+.footer h4,
+
+.footer h5{
+
+margin-top:25px;
+
+}
+
+.footer-links li{
+
+margin-bottom:12px;
+
+}
+
+}
+
+
+/*==========================================================
+576px - MOBILE
+==========================================================*/
+
+@media (max-width:576px){
+
+.logo-main{
+
+font-size:26px;
+
+}
+
+.logo-sub{
+
+font-size:10px;
+
+letter-spacing:2px;
+
+}
+
+.hero-badge{
+
+font-size:12px;
+
+padding:7px 16px;
+
+}
+
+.hero-section h1{
+
+font-size:32px;
+
+}
+
+.hero-section h2{
+
+font-size:19px;
+
+}
+
+.hero-section p{
+
+font-size:15px;
+
+}
+
+.section-title h2{
+
+font-size:27px;
+
+}
+
+.section-title p{
+
+font-size:14px;
+
+}
+
+.service-card h4,
+
+.feature-card h4{
+
+font-size:22px;
+
+}
+
+.country-card{
+
+padding:25px 18px;
+
+}
+
+.country-card{
+
+font-size:45px;
+
+}
+
+.country-card h5{
+
+font-size:18px;
+
+}
+
+.document-list li{
+
+font-size:15px;
+
+}
+
+.step-box h5{
+
+font-size:17px;
+
+}
+
+.finder-box{
+
+padding:25px 20px;
+
+}
+
+.finder-box h2{
+
+font-size:24px;
+
+}
+
+.cta-box{
+
+padding:35px 20px;
+
+}
+
+.cta-box h2{
+
+font-size:26px;
+
+}
+
+.cta-box p{
+
+font-size:15px;
+
+}
+
+.btn{
+
+padding:13px 24px;
+
+font-size:15px;
+
+}
+
+.whatsapp-float{
+
+width:58px;
+
+height:58px;
+
+font-size:28px;
+
+right:18px;
+
+bottom:18px;
+
+}
+
+.back-to-top{
+
+width:48px;
+
+height:48px;
+
+right:22px;
+
+bottom:88px;
+
+font-size:18px;
+
+}
+
+}
+
+
+/*==========================================================
+400px - EXTRA SMALL DEVICES
+==========================================================*/
+
+@media (max-width:400px){
+
+.hero-section h1{
+
+font-size:28px;
+
+}
+
+.hero-section h2{
+
+font-size:17px;
+
+}
+
+.hero-section p{
+
+font-size:14px;
+
+}
+
+.section-title h2{
+
+font-size:24px;
+
+}
+
+.logo-main{
+
+font-size:22px;
+
+}
+
+.logo-sub{
+
+font-size:9px;
+
+}
+
+.hero-graphic img{
+
+max-width:260px;
+
+}
+
+.service-card,
+
+.feature-card,
+
+.country-card,
+
+.step-box,
+
+.testimonial-card{
+
+padding:22px 18px;
+
+}
+
+.finder-box{
+
+padding:20px 15px;
+
+}
+
+.cta-box{
+
+padding:30px 15px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer p{
+
+font-size:13px;
+
+}
+
+}
+
+
+/*==========================================================
+LANDSCAPE PHONES
+==========================================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+.hero-section{
+
+min-height:auto;
+
+padding:120px 0 80px;
+
+}
+
+}
