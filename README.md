@@ -23,7 +23,7 @@ Our services include:
 
 ## Website
 
-https://www.vatsgloballogistics.com
+https://www.ectn-vatsgloballogistics.com
 
 ---
 
@@ -68,7 +68,7 @@ https://www.vatsgloballogistics.com
 
 Email:
 
-vatsgloballogistics@gmail.com
+info@ectn-vatsgloballogistics.com
 
 Phone / WhatsApp:
 
@@ -76,7 +76,7 @@ Phone / WhatsApp:
 
 Website:
 
-https://www.vatsgloballogistics.com
+https://www.ectn-vatsgloballogistics.com
 
 ---
 
@@ -85,3 +85,11 @@ https://www.vatsgloballogistics.com
 © VATS Global Logistics
 
 All Rights Reserved.
+
+---
+
+## Designed & Developed by
+
+**SIYA RAM WORLD**
+
+For Developer Info: [WhatsApp here](https://wa.me/919534857592)
