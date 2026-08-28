@@ -86,6 +86,8 @@ https://www.ectn-vatsgloballogistics.com
 
 All Rights Reserved.
 
+VATS GLOBAL LOGISTICS is an Independent Documentation Support Service.
+
 ---
 
 ## Designed & Developed by
