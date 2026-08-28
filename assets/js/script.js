@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     initCertificateFinder();
     initMobileMenu();
     initCurrentYear();
+    initProgressBar();
+    initWhatsappPulse();
+    initCounters();
 
 });
 
@@ -94,7 +97,7 @@ function initBackToTop() {
 
 
 /*==========================================================
-SMOOTH SCROLL
+SMOOTH SCROLL FOR ANCHOR LINKS
 ==========================================================*/
 
 function initSmoothScroll() {
@@ -125,24 +128,30 @@ function initSmoothScroll() {
 
 
 /*==========================================================
-ACTIVE NAVIGATION
+ACTIVE NAVIGATION LINK
 ==========================================================*/
 
-const currentPage = window.location.pathname.split("/").pop();
+(function setActiveNavLink() {
 
-document.querySelectorAll(".navbar-nav .nav-link").forEach(function(link){
+    const currentPage = window.location.pathname.split("/").pop();
 
-    const href = link.getAttribute("href");
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(function (link) {
 
-    if(href === currentPage){
+        const href = link.getAttribute("href");
 
-        link.classList.add("active");
+        if (href === currentPage) {
 
-    }
+            link.classList.add("active");
 
-});
+        }
+
+    });
+
+})();
+
+
 /*==========================================================
-SCROLL REVEAL ANIMATION
+SCROLL REVEAL ANIMATIONS
 ==========================================================*/
 
 function initScrollReveal() {
@@ -155,11 +164,11 @@ function initScrollReveal() {
 
     if (!elements.length) return;
 
-    const observer = new IntersectionObserver(function(entries){
+    const observer = new IntersectionObserver(function (entries) {
 
-        entries.forEach(function(entry){
+        entries.forEach(function (entry) {
 
-            if(entry.isIntersecting){
+            if (entry.isIntersecting) {
 
                 entry.target.classList.add("show");
 
@@ -169,13 +178,13 @@ function initScrollReveal() {
 
         });
 
-    },{
+    }, {
 
-        threshold:0.20
+        threshold: 0.20
 
     });
 
-    elements.forEach(function(element){
+    elements.forEach(function (element) {
 
         observer.observe(element);
 
@@ -188,41 +197,41 @@ function initScrollReveal() {
 COUNTER ANIMATION
 ==========================================================*/
 
-function initCounters(){
+function initCounters() {
 
-    const counters=document.querySelectorAll(".counter");
+    const counters = document.querySelectorAll(".counter");
 
-    if(!counters.length) return;
+    if (!counters.length) return;
 
-    const observer=new IntersectionObserver(function(entries){
+    const observer = new IntersectionObserver(function (entries) {
 
-        entries.forEach(function(entry){
+        entries.forEach(function (entry) {
 
-            if(entry.isIntersecting){
+            if (entry.isIntersecting) {
 
-                const counter=entry.target;
+                const counter = entry.target;
 
-                const target=parseInt(counter.dataset.target);
+                const target = parseInt(counter.dataset.target);
 
-                let value=0;
+                let value = 0;
 
-                const step=Math.ceil(target/100);
+                const step = Math.ceil(target / 100);
 
-                const timer=setInterval(function(){
+                const timer = setInterval(function () {
 
-                    value+=step;
+                    value += step;
 
-                    if(value>=target){
+                    if (value >= target) {
 
-                        value=target;
+                        value = target;
 
                         clearInterval(timer);
 
                     }
 
-                    counter.textContent=value.toLocaleString();
+                    counter.textContent = value.toLocaleString();
 
-                },20);
+                }, 20);
 
                 observer.unobserve(counter);
 
@@ -232,7 +241,7 @@ function initCounters(){
 
     });
 
-    counters.forEach(function(counter){
+    counters.forEach(function (counter) {
 
         observer.observe(counter);
 
@@ -240,88 +249,86 @@ function initCounters(){
 
 }
 
-initCounters();
-
 
 /*==========================================================
 CERTIFICATE FINDER
 ==========================================================*/
 
-function initCertificateFinder(){
+function initCertificateFinder() {
 
-    const select=document.getElementById("countrySelect");
+    const select = document.getElementById("countrySelect");
 
-    const result=document.getElementById("certificateResult");
+    const result = document.getElementById("certificateResult");
 
-    if(!select || !result) return;
+    if (!select || !result) return;
 
-    const certificates={
+    const certificates = {
 
-        "Angola":"CNCA",
+        "Angola": "CNCA",
 
-        "Benin":"BESC",
+        "Benin": "BESC",
 
-        "Burkina Faso":"ECTN",
+        "Burkina Faso": "ECTN",
 
-        "Burundi":"ECTN",
+        "Burundi": "ECTN",
 
-        "Cameroon":"BESC",
+        "Cameroon": "BESC",
 
-        "Central African Republic":"ECTN",
+        "Central African Republic": "ECTN",
 
-        "Chad":"ECTN",
+        "Chad": "ECTN",
 
-        "Congo":"ECTN",
+        "Congo": "ECTN",
 
-        "DR Congo":"FERI",
+        "DR Congo": "FERI",
 
-        "Djibouti":"ECTN",
+        "Djibouti": "ECTN",
 
-        "Gabon":"BIETC",
+        "Gabon": "BIETC",
 
-        "Ghana":"CTN",
+        "Ghana": "CTN",
 
-        "Guinea":"ECTN",
+        "Guinea": "ECTN",
 
-        "Ivory Coast":"BSC",
+        "Ivory Coast": "BSC",
 
-        "Liberia":"CTN",
+        "Liberia": "CTN",
 
-        "Libya":"ECTN",
+        "Libya": "ECTN",
 
-        "Madagascar":"BSC",
+        "Madagascar": "BSC",
 
-        "Mali":"BESC",
+        "Mali": "BESC",
 
-        "Niger":"ECTN",
+        "Niger": "ECTN",
 
-        "Senegal":"BSC",
+        "Senegal": "BSC",
 
-        "Sierra Leone":"CTN",
+        "Sierra Leone": "CTN",
 
-        "South Sudan":"ECTN",
+        "South Sudan": "ECTN",
 
-        "Sudan":"ECTN",
+        "Sudan": "ECTN",
 
-        "Togo":"ECTN"
+        "Togo": "ECTN"
 
     };
 
-    select.addEventListener("change",function(){
+    select.addEventListener("change", function () {
 
-        const country=this.value;
+        const country = this.value;
 
-        if(country==="" || !certificates[country]){
+        if (country === "" || !certificates[country]) {
 
-            result.innerHTML="";
+            result.innerHTML = "";
 
             return;
 
         }
 
-        result.innerHTML=
+        result.innerHTML =
 
-        `
+            `
 
         <div class="alert alert-primary mt-4">
 
@@ -343,7 +350,7 @@ function initCertificateFinder(){
 
             </p>
 
-            <a href="quote.html" class="btn btn-warning">
+            <a href="applyonline.html" class="btn btn-warning" style="color: #000000 !important; font-weight: 600;">
 
                 Apply Now
 
@@ -356,27 +363,29 @@ function initCertificateFinder(){
     });
 
 }
+
+
 /*==========================================================
 MOBILE MENU AUTO CLOSE
 ==========================================================*/
 
-function initMobileMenu(){
+function initMobileMenu() {
 
-    const navLinks=document.querySelectorAll(".navbar-nav .nav-link");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-    const navCollapse=document.querySelector(".navbar-collapse");
+    const navCollapse = document.querySelector(".navbar-collapse");
 
-    if(!navCollapse) return;
+    if (!navCollapse) return;
 
-    navLinks.forEach(function(link){
+    navLinks.forEach(function (link) {
 
-        link.addEventListener("click",function(){
+        link.addEventListener("click", function () {
 
-            if(navCollapse.classList.contains("show")){
+            if (navCollapse.classList.contains("show")) {
 
-                const bsCollapse=bootstrap.Collapse.getInstance(navCollapse);
+                const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
 
-                if(bsCollapse){
+                if (bsCollapse) {
 
                     bsCollapse.hide();
 
@@ -395,65 +404,61 @@ function initMobileMenu(){
 WHATSAPP PULSE ANIMATION
 ==========================================================*/
 
-function initWhatsappPulse(){
+function initWhatsappPulse() {
 
-    const whatsapp=document.querySelector(".whatsapp-float");
+    const whatsapp = document.querySelector(".whatsapp-float");
 
-    if(!whatsapp) return;
+    if (!whatsapp) return;
 
-    setInterval(function(){
+    setInterval(function () {
 
         whatsapp.classList.add("pulse");
 
-        setTimeout(function(){
+        setTimeout(function () {
 
             whatsapp.classList.remove("pulse");
 
-        },1000);
+        }, 1000);
 
-    },5000);
+    }, 5000);
 
 }
-
-initWhatsappPulse();
 
 
 /*==========================================================
 SCROLL PROGRESS BAR
 ==========================================================*/
 
-function initProgressBar(){
+function initProgressBar() {
 
-    const progress=document.getElementById("scrollProgress");
+    const progress = document.getElementById("scrollProgress");
 
-    if(!progress) return;
+    if (!progress) return;
 
-    window.addEventListener("scroll",function(){
+    window.addEventListener("scroll", function () {
 
-        const totalHeight=document.documentElement.scrollHeight-window.innerHeight;
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-        const progressHeight=(window.pageYOffset/totalHeight)*100;
+        const progressHeight = (window.pageYOffset / totalHeight) * 100;
 
-        progress.style.width=progressHeight+"%";
+        progress.style.width = progressHeight + "%";
 
     });
 
 }
-
-initProgressBar();
 
 
 /*==========================================================
 CURRENT YEAR
 ==========================================================*/
 
-function initCurrentYear(){
+function initCurrentYear() {
 
-    const year=document.getElementById("currentYear");
+    const year = document.getElementById("currentYear");
 
-    if(year){
+    if (year) {
 
-        year.textContent=new Date().getFullYear();
+        year.textContent = new Date().getFullYear();
 
     }
 
@@ -464,23 +469,25 @@ function initCurrentYear(){
 LAZY IMAGE LOADING
 ==========================================================*/
 
-const lazyImages=document.querySelectorAll("img[data-src]");
+(function initLazyImages() {
 
-if(lazyImages.length){
+    const lazyImages = document.querySelectorAll("img[data-src]");
 
-    const imageObserver=new IntersectionObserver(function(entries,observer){
+    if (!lazyImages.length) return;
 
-        entries.forEach(function(entry){
+    const imageObserver = new IntersectionObserver(function (entries) {
 
-            if(entry.isIntersecting){
+        entries.forEach(function (entry) {
 
-                const img=entry.target;
+            if (entry.isIntersecting) {
 
-                img.src=img.dataset.src;
+                const img = entry.target;
+
+                img.src = img.dataset.src;
 
                 img.removeAttribute("data-src");
 
-                observer.unobserve(img);
+                imageObserver.unobserve(img);
 
             }
 
@@ -488,96 +495,73 @@ if(lazyImages.length){
 
     });
 
-    lazyImages.forEach(function(image){
+    lazyImages.forEach(function (image) {
 
         imageObserver.observe(image);
 
     });
 
-}
+})();
 
 
 /*==========================================================
-PREVENT EMPTY FORM SUBMISSION
+FORM VALIDATION
 ==========================================================*/
 
-document.querySelectorAll("form").forEach(function(form){
+(function initFormValidation() {
 
-    form.addEventListener("submit",function(e){
+    document.querySelectorAll("form").forEach(function (form) {
 
-        const required=form.querySelectorAll("[required]");
+        form.addEventListener("submit", function (e) {
 
-        let valid=true;
+            const required = form.querySelectorAll("[required]");
 
-        required.forEach(function(input){
+            let valid = true;
 
-            if(input.value.trim()===""){
+            required.forEach(function (input) {
 
-                valid=false;
+                if (input.value.trim() === "") {
 
-                input.classList.add("is-invalid");
+                    valid = false;
 
-            }else{
+                    input.classList.add("is-invalid");
 
-                input.classList.remove("is-invalid");
+                } else {
+
+                    input.classList.remove("is-invalid");
+
+                }
+
+            });
+
+            if (!valid) {
+
+                e.preventDefault();
 
             }
 
         });
 
-        if(!valid){
-
-            e.preventDefault();
-
-        }
-
     });
 
-});
+})();
 
 
 /*==========================================================
-UTILITY
+UTILITY FUNCTIONS
 ==========================================================*/
 
-function scrollTopSmooth(){
+function scrollTopSmooth() {
 
     window.scrollTo({
 
-        top:0,
+        top: 0,
 
-        behavior:"smooth"
+        behavior: "smooth"
 
     });
 
 }
-
-
-/*==========================================================
-FUTURE MODULES
-==========================================================*/
-
-// EmailJS Integration
-
-// Web3Forms Integration
-
-// Google Analytics
-
-// Google Translate
-
-// Shipment Tracking
-
-// Customer Dashboard
-
-// Admin Dashboard
-
-// Live Chat
-
-// Multi-language Support
-
-// Currency Converter
-
-// AI Chat Assistant
 
 
 /*==========================================================
