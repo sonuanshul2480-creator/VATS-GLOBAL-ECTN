@@ -92,6 +92,6 @@ VATS GLOBAL LOGISTICS is an Independent Documentation Support Service.
 
 ## Designed & Developed by
 
-**SIYA RAM WORLD**
+**VJ WORLD**
 
 For Developer Info: [WhatsApp here](https://wa.me/919534857592)
