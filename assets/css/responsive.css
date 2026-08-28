@@ -1,0 +1,985 @@
+/* ==========================================
+   VATS Global Logistics - Responsive Styles
+========================================== */
+
+/* ---------- LARGE TABLETS & SMALL LAPTOPS ---------- */
+@media (max-width: 1199px) {
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+/* ---------- TABLETS ---------- */
+@media (max-width: 991px) {
+    /* NAVBAR */
+    .custom-navbar .navbar-collapse {
+        background: var(--primary);
+        padding: 20px;
+        border-radius: 16px;
+        margin-top: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .custom-navbar .nav-link {
+        padding: 8px 15px !important;
+        font-size: 15px;
+    }
+
+    .custom-navbar .nav-link.active::after {
+        display: none;
+    }
+
+    .custom-navbar .btn-warning {
+        margin-top: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .custom-navbar .navbar-brand img {
+        height: 45px;
+    }
+
+    .custom-navbar .navbar-brand h4 {
+        font-size: 20px;
+    }
+
+    /* HERO */
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 70%;
+        margin-top: 40px;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+        min-height: auto;
+    }
+
+    .hero-buttons .btn {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+
+    .hero-features {
+        gap: 20px;
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    /* STATS */
+    .stat-box h2 {
+        font-size: 36px;
+    }
+
+    .stat-box {
+        margin-bottom: 20px;
+    }
+
+    /* SERVICE CARDS */
+    .service-card {
+        padding: 20px 18px;
+    }
+
+    .service-card .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-card .service-icon i {
+        font-size: 22px;
+    }
+
+    .service-card.apply-card {
+        padding: 30px 20px;
+    }
+
+    /* COUNTRY CARDS */
+    .country-card {
+        padding: 20px 15px;
+    }
+
+    .country-card i {
+        font-size: 28px;
+    }
+
+    /* PROCESS */
+    .process-card {
+        padding: 25px 18px;
+    }
+
+    .process-card i {
+        font-size: 32px;
+    }
+
+    .process-number {
+        font-size: 12px;
+        padding: 3px 14px;
+        top: -10px;
+        right: 15px;
+    }
+
+    /* WHY SECTION */
+    .why-box {
+        margin-top: 30px;
+        padding: 25px;
+    }
+
+    .why-box h2 {
+        font-size: 30px;
+    }
+
+    /* CTA */
+    .cta-box {
+        padding: 40px 30px;
+    }
+
+    .cta-box h2 {
+        font-size: 30px;
+    }
+
+    .cta-box p {
+        font-size: 16px;
+    }
+
+    /* FAQ */
+    .faq-section .accordion-button {
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+
+    /* FOOTER */
+    .footer-section .row,
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer-section ul,
+    .footer ul {
+        margin-bottom: 20px;
+    }
+
+    .footer-section h5,
+    .footer h5 {
+        margin-top: 10px;
+    }
+
+    /* TOP BAR */
+    .top-bar .col-lg-8 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .top-bar .col-lg-4 {
+        text-align: center !important;
+        margin-top: 5px;
+    }
+
+    .top-bar {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .back-to-top {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+        bottom: 90px;
+        right: 25px;
+    }
+}
+
+/* ---------- SMALL TABLETS & LARGE PHONES ---------- */
+@media (max-width: 767px) {
+    /* NAVBAR */
+    .custom-navbar {
+        padding: 8px 0;
+    }
+
+    .custom-navbar .navbar-brand img {
+        height: 40px;
+    }
+
+    .custom-navbar .navbar-brand h4 {
+        font-size: 18px;
+    }
+
+    .custom-navbar .navbar-brand small {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    /* HERO */
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-title span {
+        display: inline;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .hero-badge {
+        font-size: 10px;
+        padding: 4px 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 80%;
+        margin-top: 30px;
+    }
+
+    .hero-features {
+        justify-content: center;
+        gap: 15px;
+        margin-top: 25px !important;
+    }
+
+    .hero-features div {
+        font-size: 13px;
+    }
+
+    .hero-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero-section .col-lg-6 {
+        text-align: center;
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-title.text-start {
+        text-align: center !important;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+    }
+
+    .section-badge {
+        font-size: 10px;
+        padding: 3px 14px;
+    }
+
+    /* STATS */
+    .stats-section {
+        padding: 40px 0;
+    }
+
+    .stat-box h2 {
+        font-size: 30px;
+    }
+
+    .stat-box p {
+        font-size: 14px;
+    }
+
+    /* SERVICE CARDS */
+    .services-section {
+        padding: 50px 0;
+    }
+
+    .service-card {
+        padding: 20px 16px;
+        text-align: center;
+    }
+
+    .service-card .service-icon {
+        margin: 0 auto 15px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .service-card.apply-card {
+        padding: 30px 20px;
+    }
+
+    .service-card.apply-card h3 {
+        font-size: 20px;
+    }
+
+    /* COUNTRY CARDS */
+    .countries-section {
+        padding: 50px 0;
+    }
+
+    .country-card {
+        padding: 18px 15px;
+    }
+
+    .country-card i {
+        font-size: 24px;
+    }
+
+    .country-card h5 {
+        font-size: 16px;
+    }
+
+    /* PROCESS */
+    .process-section {
+        padding: 50px 0;
+    }
+
+    .process-card {
+        padding: 20px 16px;
+    }
+
+    .process-card i {
+        font-size: 28px;
+    }
+
+    .process-card h4 {
+        font-size: 16px;
+    }
+
+    .process-card p {
+        font-size: 13px;
+    }
+
+    .process-number {
+        font-size: 11px;
+        padding: 2px 12px;
+        top: -8px;
+        right: 12px;
+    }
+
+    /* WHY SECTION */
+    .why-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .why-list div {
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .why-box {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .why-box h2 {
+        font-size: 26px;
+    }
+
+    .why-box p {
+        font-size: 13px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-section {
+        padding: 50px 0;
+    }
+
+    .testimonial-card {
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .testimonial-card p {
+        font-size: 14px;
+    }
+
+    /* FAQ */
+    .faq-section {
+        padding: 50px 0;
+    }
+
+    .faq-section .accordion-button {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+
+    .faq-section .accordion-body {
+        font-size: 14px;
+        padding: 0 16px 16px 16px;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 50px 0;
+    }
+
+    .cta-section h2 {
+        font-size: 28px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .cta-section .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .cta-section .btn.ms-2 {
+        margin-left: 0 !important;
+    }
+
+    /* QUOTE CTA */
+    .quote-cta {
+        padding: 50px 0;
+    }
+
+    .cta-box {
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+
+    .cta-box h2 {
+        font-size: 26px;
+    }
+
+    .cta-box p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .cta-box .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-box .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* FOOTER */
+    .footer-section,
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-section h3,
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer-section h5,
+    .footer h5 {
+        font-size: 15px;
+    }
+
+    .footer-section p,
+    .footer p {
+        font-size: 13px;
+    }
+
+    .footer-section ul li,
+    .footer ul li {
+        font-size: 13px;
+    }
+
+    .footer-section hr,
+    .footer hr {
+        margin: 20px 0;
+    }
+
+    .footer-section .text-center p,
+    .footer .text-center p {
+        font-size: 12px !important;
+    }
+
+    /* TOP BAR */
+    .top-bar .col-lg-8 {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .top-bar .col-lg-8 .ms-4 {
+        margin-left: 0 !important;
+    }
+
+    .top-bar .col-lg-4 {
+        font-size: 12px;
+    }
+
+    .top-bar .text-secondary {
+        display: none;
+    }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .back-to-top {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+        bottom: 75px;
+        right: 20px;
+    }
+
+    /* TABLE RESPONSIVE */
+    .table-responsive {
+        font-size: 13px;
+    }
+
+    .table-responsive .btn-sm {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        padding: 8px 10px !important;
+    }
+}
+
+/* ---------- SMALL PHONES ---------- */
+@media (max-width: 480px) {
+    /* NAVBAR */
+    .custom-navbar .navbar-brand img {
+        height: 35px;
+    }
+
+    .custom-navbar .navbar-brand h4 {
+        font-size: 16px;
+    }
+
+    .custom-navbar .navbar-brand small {
+        font-size: 8px;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 14px;
+        padding: 6px 12px !important;
+    }
+
+    .custom-navbar .btn-warning {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    /* HERO */
+    .hero-title {
+        font-size: 22px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .hero-badge {
+        font-size: 9px;
+        padding: 3px 12px;
+    }
+
+    .hero-buttons .btn {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .hero-features div {
+        font-size: 12px;
+    }
+
+    .hero-image {
+        max-width: 90%;
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    /* STATS */
+    .stat-box h2 {
+        font-size: 24px;
+    }
+
+    .stat-box p {
+        font-size: 13px;
+    }
+
+    .stat-box {
+        margin-bottom: 15px;
+    }
+
+    /* SERVICE CARDS */
+    .service-card {
+        padding: 16px 14px;
+    }
+
+    .service-card h4 {
+        font-size: 17px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+    }
+
+    .service-card .service-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .service-card .service-icon i {
+        font-size: 20px;
+    }
+
+    .service-card.apply-card {
+        padding: 25px 16px;
+    }
+
+    .service-card.apply-card h3 {
+        font-size: 18px;
+    }
+
+    /* COUNTRY CARDS */
+    .country-card {
+        padding: 15px 12px;
+    }
+
+    .country-card i {
+        font-size: 20px;
+    }
+
+    .country-card h5 {
+        font-size: 14px;
+    }
+
+    .country-card p {
+        font-size: 12px;
+    }
+
+    /* PROCESS */
+    .process-card {
+        padding: 18px 14px;
+    }
+
+    .process-card i {
+        font-size: 24px;
+    }
+
+    .process-card h4 {
+        font-size: 15px;
+    }
+
+    .process-card p {
+        font-size: 12px;
+    }
+
+    .process-number {
+        font-size: 10px;
+        padding: 2px 10px;
+        top: -6px;
+        right: 10px;
+    }
+
+    /* WHY SECTION */
+    .why-list div {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .why-box h2 {
+        font-size: 22px;
+    }
+
+    .why-box .col-6 {
+        padding: 0 8px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-card {
+        padding: 20px 16px;
+    }
+
+    .testimonial-card p {
+        font-size: 13px;
+    }
+
+    .testimonial-icon {
+        font-size: 24px;
+    }
+
+    /* FAQ */
+    .faq-section .accordion-button {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    .faq-section .accordion-body {
+        font-size: 13px;
+        padding: 0 14px 14px 14px;
+    }
+
+    /* CTA */
+    .cta-section h2 {
+        font-size: 22px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+    }
+
+    .cta-box {
+        padding: 25px 15px;
+    }
+
+    .cta-box h2 {
+        font-size: 22px;
+    }
+
+    .cta-box p {
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    .footer-section h3,
+    .footer h4 {
+        font-size: 18px;
+    }
+
+    .footer-section p,
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer-section ul li,
+    .footer ul li {
+        font-size: 12px;
+    }
+
+    .footer-section .text-center p,
+    .footer .text-center p {
+        font-size: 11px !important;
+    }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .back-to-top {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+        bottom: 65px;
+        right: 15px;
+    }
+
+    /* TABLE */
+    .table-responsive {
+        font-size: 12px;
+    }
+
+    .table-responsive .btn-sm {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        padding: 6px 8px !important;
+    }
+
+    /* TOP BAR */
+    .top-bar {
+        font-size: 11px;
+        padding: 6px 0;
+    }
+
+    .top-bar .col-lg-8 span {
+        font-size: 11px;
+    }
+
+    .top-bar .col-lg-4 {
+        font-size: 11px;
+    }
+
+    .top-bar i {
+        font-size: 12px;
+    }
+}
+
+/* ---------- EXTRA SMALL DEVICES ---------- */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .custom-navbar .navbar-brand img {
+        height: 30px;
+    }
+
+    .custom-navbar .navbar-brand h4 {
+        font-size: 14px;
+    }
+
+    .custom-navbar .navbar-brand small {
+        font-size: 7px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    .stat-box h2 {
+        font-size: 20px;
+    }
+
+    .service-card h4 {
+        font-size: 15px;
+    }
+
+    .cta-box h2 {
+        font-size: 20px;
+    }
+
+    .cta-box p {
+        font-size: 13px;
+    }
+}
+
+/* ---------- LANDSCAPE MODE ---------- */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: 30px 0;
+    }
+
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .hero-image {
+        max-width: 50%;
+        margin-top: 20px;
+    }
+
+    .hero-features {
+        margin-top: 15px !important;
+        gap: 15px;
+    }
+
+    .custom-navbar .navbar-collapse {
+        max-height: 60vh;
+    }
+}
+
+/* ---------- PRINT ---------- */
+@media print {
+    .whatsapp-float,
+    .back-to-top,
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 20px 0;
+    }
+
+    .hero-overlay {
+        display: none;
+    }
+
+    body {
+        color: #000 !important;
+        background: #fff !important;
+    }
+
+    .btn {
+        border: 1px solid #000 !important;
+        background: transparent !important;
+        color: #000 !important;
+    }
+
+    .service-card,
+    .country-card,
+    .process-card {
+        border: 1px solid #ddd !important;
+        background: #f9f9f9 !important;
+        color: #000 !important;
+    }
+
+    .section-title,
+    .hero-title {
+        color: #000 !important;
+    }
+}
